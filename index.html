@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Thiago Miranda — Estudiante de desarrollo web apasionado por el diseño y la tecnología. Argentina."/>
+  <title>Thiago Miranda — Portafolio</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet"/>
+
+  <!-- Librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="navbar">
+    <nav id="nav-pill" aria-label="Navegación principal">
+      <div class="logo-wrapper">
+        <div class="logo-inner">
+          <span class="logo-text"><a href="#hero">TM</a></span>
+        </div>
+      </div>
+
+      <div class="nav-divider nav-divider--desktop" aria-hidden="true"></div>
+
+      <ul class="nav-links">
+        <li><a href="#aboutme" class="nav-link nav-link--active">Sobre mi</a></li>
+        <li><a href="#works" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-divider nav-divider--desktop" aria-hidden="true"></div>
+
+      <a href="https://github.com/ThiagoMirandaLiotto" target="_blank" class="btn-say-hi btn-gradient-border">GitHub ↗</a>
+
+      <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
+      <div class="nav-mobile-menu-inner">
+        <ul class="nav-mobile-links">
+          <li><a href="#aboutme" class="nav-link">Sobre mi</a></li>
+          <li><a href="#works" class="nav-link">Proyectos</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="https://github.com/ThiagoMirandaLiotto" target="_blank" class="nav-mobile-github">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Presentación">
+      <div class="hero-bg" aria-hidden="true">
+        <video id="hero-video" autoplay muted loop playsinline></video>
+        <div class="hero-overlay"></div>
+        <div class="hero-fade"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <p class="hero-eyebrow blur-in">Buenos Aires, Argentina</p>
+        <h1 class="name-reveal">Thiago ML</h1>
+        <p class="hero-role blur-in">
+          Un <span id="role-text">Estudiante</span> que vive en Argentina.
+        </p>
+        <p class="hero-desc blur-in">
+          Me gusta diseñar y desarrollar webs. Aprendo todos los días, fallo bastante, y de a poco voy entendiendo cómo hacer que las cosas se vean y funcionen bien.
+        </p>
+        <div class="hero-cta blur-in">
+          <a href="#aboutme" class="btn-view-all btn-gradient-border">Mas sobre mi</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- LENGUAJES -->
+    <section id="languages" aria-label="Lenguajes aprendidos">
+      <div class="section-container">
+        <div class="languages-header">
+          <div class="section-eyebrow">
+            <div class="eyebrow-line"></div>
+            <span>Tecnologías</span>
+          </div>
+          <h2 class="section-title">Lenguajes aprendidos</h2>
+        </div>
+        <ul class="languages-grid">
+          <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+          <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+          <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+          <li><i class="devicon-azuresqldatabase-plain colored"></i> SQL</li>
+          <li><i class="devicon-java-plain colored"></i> Java</li>
+          <li><i class="devicon-python-plain colored"></i> Python (básico)</li>
+        </ul>
+      </div>
+    </section>
+
+       <!-- ABOUT ME -->
+    <section id="aboutme" aria-label="Sección sobre mi">
+      <div class="section-container">
+
+        <div class="aboutme-profile">
+          <div class="aboutme-photo">
+            <img src="img/fotoPerfil.jpg" alt="Foto de Thiago Miranda" />
+          </div>
+          <div class="aboutme-bio">
+            <div class="section-eyebrow">
+              <div class="eyebrow-line"></div>
+              <span>Un poco más sobre mí</span>
+            </div>
+            <h2 class="section-title">Thiago Miranda Liotto</h2>
+            <p class="aboutme-bio-text">Aprendí a programar desde los 13 años, viendo tutroiales de Youtube y diseñando paginas webs; la primera de estas fue <a href="https://github.com/ThiagoMirandaLiotto/EnseProg.git"><span style="font-weight: bold; font-style: italic; font-family: monospace;">EnseProg</span></a>, la cual como cuenta en ella, la diseñé y contruí cuando tenía 13-14 años, la utilicé como un anotador de todo lo que iba aprendiendo en los cursos de programacion que estaba haciendo.</p>
+          </div>
+        </div>
+
+        <div class="aboutme-layout">
+
+          <!-- ESTUDIOS -->
+          <div class="aboutme-block">
+            <div class="section-eyebrow">
+              <div class="eyebrow-line"></div>
+              <span>Formación</span>
+            </div>
+            <h2 class="section-title">Estudios</h2>
+            <ul class="estudios-list">
+              <li>
+                <span class="estudio-nombre">Instituto Politécnico Modelo</span>
+                <span class="estudio-fechas">2021 <span class="estudio-line"></span> Ahora</span>
+              </li>
+              <li>
+                <span class="estudio-nombre">UBA XXI</span>
+                <span class="estudio-fechas">2026 <span class="estudio-line"></span> Ahora</span>
+              </li>
+              <li>
+                <span class="estudio-nombre">Ciencias de Datos (UBA)</span>
+                <span class="estudio-fechas">2027 <span class="estudio-line"></span> Próximamente</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experience" aria-label="Experiencia laboral">
+      <div class="section-container">
+        <div class="experience-header">
+          <div class="section-eyebrow">
+            <div class="eyebrow-line"></div>
+            <span>Trabajo</span>
+          </div>
+          <h2 class="section-title">Experiencia laboral</h2>
+        </div>
+        <ul class="experience-grid">
+          <li>
+            <span class="experience-role">Asistente en soporte</span>
+            <span class="experience-company">Dux Software</span>
+          </li>
+          <li>
+            <span class="experience-role">Desarrollador web</span>
+            <span class="experience-company">Ren Motors Accesorios</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section id="works" aria-label="Trabajos seleccionados">
+      <div class="section-container">
+        <div class="works-header">
+          <div class="section-heading-group">
+            <div class="section-eyebrow">
+              <div class="eyebrow-line"></div>
+              <span>Lo que hice</span>
+            </div>
+            <h2 class="section-title">Proyectos destacados</h2>
+          </div>
+          <a href="https://github.com/ThiagoMirandaLiotto" class="btn-view-all btn-gradient-border">Ver todo ↗</a>
+        </div>
+
+        <div class="bento-grid">
+          <article class="project-card card-7 card-fit-image">
+            <img src="/img/Captura desde 2026-05-04 17-00-04.png" alt="Landing page para estudio de tatuajes" class="img-contain"/>
+            <div class="halftone" aria-hidden="true"></div>
+            <div class="card-overlay">
+              <a href="https://github.com/ThiagoMirandaLiotto/CarZoneOnline" class="card-label">Ver — Car Zone Online</a>
+            </div>
+          </article>
+
+          <article class="project-card card-5">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&q=80"/>
+            <div class="halftone" aria-hidden="true"></div>
+            <div class="card-overlay">
+              <a href="https://github.com/ThiagoMirandaLiotto/VueltaAlCole.git"><span class="card-label">Ver — Vuelta al Cole</span></a>
+            </div>
+          </article>
+
+          <article class="project-card card-5">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80" alt="Proyecto final de App para entrenador"/>
+            <div class="halftone" aria-hidden="true"></div>
+            <div class="card-overlay">
+              <a href="https://github.com/Instituto-Politecnico-Modelo/TP3-docs-Oddo-Miranda.git"><span class="card-label">Ver — App Entrenador</span></a>
+            </div>
+          </article>
+
+          <article class="project-card card-7">
+            <img src="/img/Captura desde 2026-05-04 16-57-03.png" alt=""/>
+            <div class="halftone" aria-hidden="true"></div>
+            <div class="card-overlay">
+              <a href="https://github.com/ThiagoMirandaLiotto/EnseProg.git"><span class="card-label">Ver — Ense Prog</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" aria-label="Estadísticas">
+      <div class="stats-grid">
+        <div class="stats-item">
+          <p class="stats-number">6+</p>
+          <p class="stats-label">Años estudiando</p>
+        </div>
+        <div class="stats-item">
+          <p class="stats-number">12+</p>
+          <p class="stats-label">Proyectos entregados</p>
+        </div>
+        <div class="stats-item">
+          <p class="stats-number">100%</p>
+          <p class="stats-label">Ganas de seguir</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact" aria-label="Contacto y redes">
+    <div class="footer-video-bg" aria-hidden="true">
+      <video id="footer-video" autoplay muted loop playsinline></video>
+      <div class="footer-overlay"></div>
+    </div>
+
+    <!-- Marquee: duplicar span para loop sin corte -->
+    <div class="footer-marquee-wrapper" aria-hidden="true">
+      <div class="marquee-inner" id="marquee">
+        <span class="marquee-text">
+          CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp;
+        </span>
+        <span class="marquee-text" aria-hidden="true">
+          CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp; CONSTRUYENDO EL FUTURO •&nbsp;
+        </span>
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <p class="footer-cta-label">Contactame</p>
+      <a href="mailto:thiago.miranda@ejemplo.com" class="footer-email btn-gradient-border">
+        thiagomirandaliotto@gmail.com ↗
+      </a>
+    </div>
+
+    <div class="footer-bar">
+      <div class="footer-bar-inner">
+        <nav class="footer-socials" aria-label="Redes sociales">
+          <a href="https://x.com/">Twitter</a>
+          <a href="https://github.com/ThiagoMirandaLiotto">GitHub</a>
+          <a href="https://www.linkedin.com/in/thiago-miranda">LinkedIn</a>
+          <a href="https://dribbble.com/ThiagoMiranda">Dribbble</a>
+        </nav>
+
+        <small class="footer-copy">© 2026 Thiago Miranda</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
